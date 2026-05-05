@@ -1,0 +1,27 @@
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  background: #1a1a2e; color: #fff; padding: 0 24px; height: 60px;
+  position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo { font-size: 24px; }
+.title { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
+.right { display: flex; align-items: center; gap: 16px; }
+.cartBadge {
+  background: #e94560; color: #fff; padding: 4px 12px;
+  border-radius: 20px; font-size: 13px; font-weight: 600;
+}
+.user { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.roleBadge {
+  padding: 2px 8px; border-radius: 4px; font-size: 11px;
+  font-weight: 700; text-transform: uppercase;
+}
+.roleBadge[data-role="ADMIN"] { background: #e94560; }
+.roleBadge[data-role="WHOLESALER"] { background: #f5a623; color: #000; }
+.roleBadge[data-role="RETAILER"] { background: #0f3460; }
+.logoutBtn {
+  background: transparent; border: 1px solid rgba(255,255,255,0.4);
+  color: #fff; padding: 6px 14px; border-radius: 6px; cursor: pointer;
+  font-size: 13px; transition: all 0.2s;
+}
+.logoutBtn:hover { background: rgba(255,255,255,0.1); }
